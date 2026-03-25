@@ -9,30 +9,19 @@ const Footer = ({ content }: { content: MgnlContent }) => {
     <>
       <div className='grid grid-cols-3 gap-12'>
         <a
-          href='https://www.magnolia-cms.com'
+          href='https://dailyplanetdc.com/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <img
             className='py-6 max-w-64'
-            src='/Magnolia_icon_white.svg'
-            alt='Magnolia Logo'
+            src='/daily-planet-logo-inverted.png'
+            alt='Daily Planet Logo'
           />
         </a>
-        <div className='col-span-2'>
-          {content['@nodes']?.map((node: string) => {
-            const componentContent = content[node] as MgnlContent;
-            return (
-              <EditableComponent
-                key={componentContent['@id']}
-                content={componentContent}
-              />
-            );
-          })}
+        <div className='text-center text-white py-6'>
+          <p>© {year} Daily Planet. Delivering truth, justice, and clean UI. All rights belong to DC Comics.</p>
         </div>
-      </div>
-      <div className='text-center text-light-green py-6'>
-        <p>© {year} Daily Planet. Delivering truth, justice, and clean UI.</p>
       </div>
     </>
   );

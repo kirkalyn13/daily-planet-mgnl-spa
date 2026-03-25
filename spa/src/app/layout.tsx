@@ -5,7 +5,7 @@ import '../styles.css';
 export const metadata: Metadata = {
   title: 'Next.js Starter Project',
   icons: {
-    icon: '/Magnolia_favicon.png',
+    icon: '/favicon.png',
   },
 };
 

@@ -15,7 +15,7 @@ const Article = ({ title, main, footer }: IArticleProps) => {
 
       {footer && (
         <EditableArea
-          className={'bg-dark-teal text-white px-8'}
+          className={'footer bg-black text-white px-8'}
           content={footer}
           customView={Footer}
         />
