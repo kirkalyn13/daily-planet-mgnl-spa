@@ -2,6 +2,8 @@
 import { MgnlContent } from '@magnolia/frontend-helpers-base';
 import { EditableComponent } from '@magnolia/react-editor';
 
+const year = new Date().getFullYear();
+
 const Footer = ({ content }: { content: MgnlContent }) => {
   return (
     <>
@@ -30,7 +32,7 @@ const Footer = ({ content }: { content: MgnlContent }) => {
         </div>
       </div>
       <div className='text-center text-light-green py-6'>
-        <p>2024 Magnolia International Ltd. Some rights reserved.</p>
+        <p>© {year} Daily Planet. Delivering truth, justice, and clean UI.</p>
       </div>
     </>
   );
