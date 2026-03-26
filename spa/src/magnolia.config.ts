@@ -4,6 +4,7 @@ import Home from './app/templates/pages/Home/Home';
 import General from './app/templates/pages/General/General';
 import Folder from './app/templates/pages/Folder/Folder';
 import Article from './app/templates/pages/Article/Article';
+import ArticleList from './app/templates/pages/ArticleList/ArticleList';
 
 import Hero from './app/templates/components/Hero/Hero';
 import LinkList from './app/templates/components/LinkList/LinkList';
@@ -18,6 +19,7 @@ export const config: MagnoliaConfig = {
     'daily-planet-lm:pages/general': General,
     'daily-planet-lm:pages/folder': Folder,
     'daily-planet-lm:pages/article': Article,
+    'daily-planet-lm:pages/article-list': ArticleList,
 
     // Component Templates
     'daily-planet-lm:components/hero': Hero,
