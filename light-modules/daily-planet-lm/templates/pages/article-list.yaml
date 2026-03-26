@@ -1,0 +1,23 @@
+title: 'Daily Planet: Article List'
+dialog: daily-planet-lm:pages/article-list
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+baseUrl: http://localhost:8181
+routeTemplate: '/articles/{language}{{@path}}'
+
+areas:
+  main:
+    title: Main Area
+    availableComponents:
+      Text:
+        id: daily-planet-lm:components/text
+
+  footer:
+    title: Footer Area
+    inheritance:
+      enabled: true
+      components: all
+
+
+  
