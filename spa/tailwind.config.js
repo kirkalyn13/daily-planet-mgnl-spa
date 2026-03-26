@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-karla)', 'sans-serif'],
+        sans: ['var(--font-newsreader)', 'sans-serif'],
       },
       colors: {
         'dark-teal': '#02373F',

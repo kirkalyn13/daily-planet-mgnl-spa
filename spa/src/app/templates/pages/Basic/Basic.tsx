@@ -15,7 +15,7 @@ const Basic = ({ title, main, footer }: IBasicProps) => {
 
       {footer && (
         <EditableArea
-          className={'bg-dark-teal text-white px-8'}
+          className={'px-8'}
           content={footer}
           customView={Footer}
         />

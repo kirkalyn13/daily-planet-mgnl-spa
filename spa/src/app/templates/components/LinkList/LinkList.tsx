@@ -14,7 +14,7 @@ const LinkList = ({ title, theme, items }: ILinkListProps) => {
   return (
     <div
       className={classnames('px-8', 'py-6', {
-        'bg-dark-teal': theme === 'dark',
+        'bg-black': theme === 'dark',
       })}
     >
       {title && (
