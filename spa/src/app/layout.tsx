@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Karla } from 'next/font/google';
+import { Newsreader } from 'next/font/google';
 import '../styles.css';
 
 export const metadata: Metadata = {
@@ -9,10 +9,9 @@ export const metadata: Metadata = {
   },
 };
 
-const karla = Karla({
+const newsreader = Newsreader({
   subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-karla',
+  weight: ['400', '700'],
 });
 
 export default function RootLayout({
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={karla.variable}>
+    <html lang='en' className={newsreader.className}>
       <body>{children}</body>
     </html>
   );
