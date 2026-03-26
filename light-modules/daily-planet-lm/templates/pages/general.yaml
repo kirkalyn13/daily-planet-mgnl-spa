@@ -1,10 +1,10 @@
-title: 'Daily Planet: Article'
-dialog: daily-planet-lm:pages/article
+title: 'Daily Planet: General'
+dialog: daily-planet-lm:pages/general
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 
 baseUrl: http://localhost:8181
-routeTemplate: '/articles/{language}{{@path}}'
+routeTemplate: '/{language}{{@path}}'
 
 areas:
   main:

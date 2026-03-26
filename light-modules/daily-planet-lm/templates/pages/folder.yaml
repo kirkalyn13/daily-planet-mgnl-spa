@@ -1,0 +1,10 @@
+title: 'Daily Planet: Folder'
+dialog: daily-planet-lm:pages/folder
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+baseUrl: http://localhost:8181
+routeTemplate: '/{language}{{@path}}'
+
+
+  

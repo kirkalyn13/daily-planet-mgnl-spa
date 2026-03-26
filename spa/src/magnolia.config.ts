@@ -5,11 +5,17 @@ import ListItem from './app/templates/components/ListItem/ListItem';
 import Text from './app/templates/components/Text/Text';
 import TextImage from './app/templates/components/TextImage/TextImage';
 import Basic from './app/templates/pages/Basic/Basic';
+import Home from './app/templates/pages/Home/Home';
+import General from './app/templates/pages/General/General';
+import Folder from './app/templates/pages/Folder/Folder';
 import Article from './app/templates/pages/Article/Article';
 
 export const config: MagnoliaConfig = {
   componentMappings: {
     'daily-planet-lm:pages/basic': Basic,
+    'daily-planet-lm:pages/home': Home,
+    'daily-planet-lm:pages/general': General,
+    'daily-planet-lm:pages/folder': Folder,
     'daily-planet-lm:pages/article': Article,
 
     'daily-planet-lm:components/text': Text,
