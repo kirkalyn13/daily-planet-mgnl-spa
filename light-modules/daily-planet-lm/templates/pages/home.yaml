@@ -10,6 +10,8 @@ areas:
   main:
     title: Main Area
     availableComponents:
+      Hero:
+        id: daily-planet-lm:components/hero
       Text:
         id: daily-planet-lm:components/text
       TextImage:

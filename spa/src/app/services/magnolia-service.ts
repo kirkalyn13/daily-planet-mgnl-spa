@@ -21,7 +21,6 @@ export async function fetchPageContent(
       },
     };
   }
-  console.log("REQUEST PAGECONTENT", pageBase + magnoliaContext.nodePath + magnoliaContext.search)
   const pagesRes = await fetch(
     pageBase + magnoliaContext.nodePath + magnoliaContext.search,
     fetchConfig

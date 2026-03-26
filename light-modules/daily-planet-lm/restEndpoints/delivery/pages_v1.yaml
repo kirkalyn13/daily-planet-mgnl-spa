@@ -20,3 +20,7 @@ references:
     propertyName: image
     referenceResolver:
       class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: backgroundImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
