@@ -33,16 +33,28 @@ const NavItem = ({
   return (
     <>
       <NavLink
-        className='navbar-item'
+        className="
+          relative inline-block group
+          navbar-item
+        "
         href={baseName + content['@path'].replace(nodeName || '', '') || '/'}
         isMagnoliaEdit={isMagnoliaEdit}
       >
-        {
-          (content.navigationTitle ||
+        <span>
+          {(content.navigationTitle ||
             content.title ||
-            content['@name']) as string
-        }
+            content['@name']) as string}
+        </span>
+
+        <span
+          className="
+            absolute left-0 -bottom-1 w-0 h-[2px] bg-black
+            transition-all duration-300 ease-out
+            group-hover:w-full
+          "
+        />
       </NavLink>
+
       {children}
     </>
   );
