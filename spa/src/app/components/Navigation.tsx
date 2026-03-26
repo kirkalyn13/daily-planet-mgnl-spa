@@ -18,7 +18,7 @@ const Navigation = ({
     <>
       <header className='sticky top-0 h-20 px-8 z-50 flex justify-between items-center bg-white border-b border-[#a9a9a9]'>
         <a href='/'>
-          <img src='/Magnolia_logo.png' className='w-52' alt='Magnolia Logo' />
+          <img src='/daily-planet-logo.png' className='w-52' alt='Daily Planet Logo' />
         </a>
         <nav>
           <ul className='flex space-x-6'>

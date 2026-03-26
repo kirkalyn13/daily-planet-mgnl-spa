@@ -20,8 +20,8 @@ const LinkList = ({ title, theme, items }: ILinkListProps) => {
       {title && (
         <p
           className={classnames('pb-4', {
-            'text-light-green': theme === 'dark',
-            'text-dark-teal': theme === 'light',
+            'text-white': theme === 'dark',
+            'text-black': theme === 'light',
           })}
         >
           {title}
@@ -34,8 +34,8 @@ const LinkList = ({ title, theme, items }: ILinkListProps) => {
               <li
                 key={component['@name']}
                 className={classnames({
-                  'text-light-green': theme === 'dark',
-                  'text-dark-teal': theme === 'light',
+                  'text-white': theme === 'dark',
+                  'text-black': theme === 'light',
                 })}
               >
                 <EditableComponent content={component} />

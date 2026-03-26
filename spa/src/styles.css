@@ -1,14 +1,14 @@
 @tailwind base;
 @layer base {
   html {
-    @apply text-dark-teal;
+    @apply text-black;
   }
 }
 @tailwind components;
 @tailwind utilities;
 
 .variantSelector {
-  @apply text-dark-teal;
+  @apply text-black;
 }
 
 .disable-a-pointer-events a {
