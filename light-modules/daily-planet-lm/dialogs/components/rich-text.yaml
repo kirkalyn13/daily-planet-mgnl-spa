@@ -1,4 +1,4 @@
-label: Text
+label: Rich Text
 form:
   properties:
     text:
@@ -6,5 +6,4 @@ form:
       $type: richTextField
       i18n: true
       required: true
-      colors: 02373F
       fontSizes: 'Small/0.75rem;Default/1rem;Big/1.5rem'

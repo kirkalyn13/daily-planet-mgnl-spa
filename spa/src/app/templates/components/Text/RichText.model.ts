@@ -2,7 +2,7 @@
 // It will be overwritten when running `create-model`. Avoid manual edits.
 import { MagnoliaNodeMeta } from '@magnolia/frontend-helpers-base';
 
-export default interface ITextProps {
+export default interface IRichTextProps {
   metadata: MagnoliaNodeMeta;
   text: string;
 }

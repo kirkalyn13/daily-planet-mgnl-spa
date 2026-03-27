@@ -16,5 +16,8 @@ form:
       label: Text
       $type: richTextField
       i18n: true
-      colors: 02373F
       fontSizes: 'Small/0.75rem;Default/1rem;Big/1.5rem'
+    isImageFirst:
+      label: Image First
+      $type: checkBoxField
+      buttonLabel: Image is placed on the left or before the text.

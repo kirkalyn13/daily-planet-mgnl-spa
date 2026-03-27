@@ -2,10 +2,11 @@
 // It will be overwritten when running `create-model`. Avoid manual edits.
 import { MagnoliaNodeMeta, MgnlContent } from '@magnolia/frontend-helpers-base';
 
-export default interface ITextImageProps {
+export default interface ITextWithImageProps {
   metadata: MagnoliaNodeMeta;
   image?: MgnlContent;
   altText?: string;
   caption?: string;
   text?: string;
+  isImageFirst?: boolean;
 }

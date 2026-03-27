@@ -11,7 +11,7 @@ areas:
     title: Main Area
     availableComponents:
       Text:
-        id: daily-planet-lm:components/text
+        id: daily-planet-lm:components/rich-text
 
   footer:
     title: Footer Area

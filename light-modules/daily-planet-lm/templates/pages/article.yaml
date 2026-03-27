@@ -13,11 +13,11 @@ areas:
       Hero:
         id: daily-planet-lm:components/hero
       Text:
-        id: daily-planet-lm:components/text
+        id: daily-planet-lm:components/rich-text
       TextImage:
-        id: daily-planet-lm:components/textImage
+        id: daily-planet-lm:components/text-with-image
       LinkList:
-        id: daily-planet-lm:components/linkList
+        id: daily-planet-lm:components/link-list
 
   footer:
     title: Footer Area

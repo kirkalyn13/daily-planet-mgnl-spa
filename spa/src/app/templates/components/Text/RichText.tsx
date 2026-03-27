@@ -1,7 +1,7 @@
 import { decodeIfEscaped } from '@magnolia/frontend-helpers-base';
-import ITextProps from './Text.model';
+import IRichTextProps from './RichText.model';
 
-const Text = ({ text }: ITextProps) => {
+const RichText = ({ text }: IRichTextProps) => {
   return (
     <div
       className='py-6 px-8 text-center'
@@ -10,4 +10,4 @@ const Text = ({ text }: ITextProps) => {
   );
 };
 
-export default Text;
+export default RichText;

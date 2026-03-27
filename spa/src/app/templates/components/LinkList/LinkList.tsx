@@ -19,7 +19,7 @@ const LinkList = ({ title, theme, items }: ILinkListProps) => {
     >
       {title && (
         <p
-          className={classnames('pb-4', {
+          className={classnames('pb-4 font-bold text-xl', {
             'text-white': theme === 'dark',
             'text-black': theme === 'light',
           })}

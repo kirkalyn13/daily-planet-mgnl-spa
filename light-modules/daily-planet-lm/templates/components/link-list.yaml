@@ -1,8 +1,8 @@
 title: Link List
-dialog: daily-planet-lm:components/linkList
+dialog: daily-planet-lm:components/link-list
 areas:
   items:
     title: Link List Items Area
     availableComponents:
       Item:
-        id: daily-planet-lm:components/listItem
+        id: daily-planet-lm:components/list-item
