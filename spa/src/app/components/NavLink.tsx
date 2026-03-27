@@ -11,11 +11,13 @@ const NavLink = ({
   children?: React.ReactNode;
   isMagnoliaEdit: boolean;
 }) => {
-  if (isMagnoliaEdit) {
-    return <span className={className}>{children}</span>;
-  }
   return (
-    <Link className={className} href={href}>
+    <Link
+      href={href}
+      className={className}
+      onClick={isMagnoliaEdit ? (e) => e.preventDefault() : undefined}
+      style={isMagnoliaEdit ? { pointerEvents: 'none' } : undefined}
+    >
       {children}
     </Link>
   );
