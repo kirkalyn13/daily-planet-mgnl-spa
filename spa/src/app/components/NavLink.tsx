@@ -17,6 +17,7 @@ const NavLink = ({
       className={className}
       onClick={isMagnoliaEdit ? (e) => e.preventDefault() : undefined}
       style={isMagnoliaEdit ? { pointerEvents: 'none' } : undefined}
+      suppressHydrationWarning
     >
       {children}
     </Link>
