@@ -29,6 +29,7 @@ form:
         heroImage:
           label: Image
           $type: damLinkField
+          required: true
           i18n: true
         heroTitle:
           label: Title
@@ -40,5 +41,6 @@ form:
           i18n: true
         description:
           label: Text
-          $type: richTextField
+          $type: textField
+          rows: 5
           i18n: true

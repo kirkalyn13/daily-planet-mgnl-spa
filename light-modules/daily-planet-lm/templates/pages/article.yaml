@@ -16,8 +16,6 @@ areas:
         id: daily-planet-lm:components/rich-text
       TextWithImage:
         id: daily-planet-lm:components/text-with-image
-      LinkList:
-        id: daily-planet-lm:components/link-list
 
   footer:
     title: Footer Area

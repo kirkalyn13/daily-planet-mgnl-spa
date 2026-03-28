@@ -34,3 +34,8 @@ references:
     referenceResolver:
       $type: jcrReferenceResolver
       targetWorkspace: website
+  - name: pageReference
+    propertyName: links
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: website

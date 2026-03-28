@@ -5,16 +5,14 @@ form:
       label: Title
       $type: textField
       i18n: true
-    theme:
-      label: Theme
-      $type: radioButtonGroupField
-      required: true
-      datasource:
-        $type: optionListDatasource
-        options:
-          - name: light
-            value: light
-            label: Light
-          - name: dark
-            value: dark
-            label: Dark
+    limit:
+      label: Item limit
+      $type: textField
+      type: java.lang.Integer
+      converterClass: com.vaadin.data.converter.StringToIntegerConverter
+    links:
+      $type: jcrMultiLinkField
+      label: Articles
+      minItems: 1
+      maxItems: 3
+      field: !include:/daily-planet-lm/includes/apps/shared/articles/article-link.yaml

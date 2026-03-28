@@ -2,8 +2,11 @@
 // It will be overwritten when running `create-model`. Avoid manual edits.
 import { MagnoliaNodeMeta } from '@magnolia/frontend-helpers-base';
 
-export default interface IListItemProps {
-  metadata: MagnoliaNodeMeta;
-  label?: string;
-  url?: string;
+export default interface ICardProps {
+  metadata?: MagnoliaNodeMeta;
+  title: string;
+  publishDate: string;
+  heroImage: string;
+  description: string;
+  path: string;
 }

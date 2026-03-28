@@ -1,49 +1,27 @@
 import { MgnlContent } from '@magnolia/frontend-helpers-base';
-import { EditableArea, EditableComponent } from '@magnolia/react-editor';
-import classnames from 'classnames';
 import ILinkListProps from './LinkList.model';
+import Card from '../Card/Card';
 
-const LinkList = ({ title, theme, items }: ILinkListProps) => {
-  const getComponents = () => {
-    return (
-      (items?.['@nodes']?.map((nodeName) => {
-        return items[nodeName];
-      }) as MgnlContent[]) || []
-    );
-  };
+const LinkList = ({ title, links = [] }: ILinkListProps) => {
   return (
-    <div
-      className={classnames('px-8', 'py-6', {
-        'bg-black': theme === 'dark',
-      })}
-    >
+    <div className="w-full max-w-5xl mx-auto px-6 md:px-8 my-8 text-center">
       {title && (
-        <p
-          className={classnames('pb-4 font-bold text-xl', {
-            'text-white': theme === 'dark',
-            'text-black': theme === 'light',
-          })}
-        >
+        <p className="font-bold text-2xl my-8">
           {title}
         </p>
       )}
-      {items && (
-        <EditableArea content={items} elementType='ul' className='space-y-2'>
-          {getComponents().map((component) => {
-            return (
-              <li
-                key={component['@name']}
-                className={classnames({
-                  'text-white': theme === 'dark',
-                  'text-black': theme === 'light',
-                })}
-              >
-                <EditableComponent content={component} />
-              </li>
-            );
-          })}
-        </EditableArea>
-      )}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {links.map((page: MgnlContent) => (
+          <Card
+            key={page["@id"]}
+            title={page["title"]}
+            publishDate={page["publishDate"]}
+            heroImage={page["heroImage"]}
+            description={page["description"]}
+            path={page["@path"]}
+          />
+        ))}
+      </div>
     </div>
   );
 };

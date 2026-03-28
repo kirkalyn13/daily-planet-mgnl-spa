@@ -10,8 +10,8 @@ areas:
   main:
     title: Main Area
     availableComponents:
-      Text:
-        id: daily-planet-lm:components/rich-text
+      LinkList:
+        id: daily-planet-lm:components/link-list
 
   footer:
     title: Footer Area

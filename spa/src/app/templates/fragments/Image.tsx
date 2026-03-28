@@ -9,7 +9,7 @@ interface IImageProps {
   alt: string;
   caption?: string;
   styles?: string;
-  id?: string
+  id?: string;
 }
 
 const Image = ({

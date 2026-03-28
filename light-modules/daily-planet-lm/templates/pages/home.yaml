@@ -14,6 +14,8 @@ areas:
         id: daily-planet-lm:components/carousel
       FeaturedArticle:
         id: daily-planet-lm:components/featured-article
+      LinkList:
+        id: daily-planet-lm:components/link-list
 
   footer:
     title: Footer Area

@@ -7,6 +7,6 @@ export type Theme = 'light' | 'dark';
 export default interface ILinkListProps {
   metadata: MagnoliaNodeMeta;
   title?: string;
-  theme: Theme;
-  items?: MgnlContent;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  links: MgnlContent[] | any;
 }

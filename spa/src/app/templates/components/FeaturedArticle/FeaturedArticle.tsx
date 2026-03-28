@@ -38,7 +38,7 @@ const FeaturedArticle = ({
           hover:after:w-full
           mx-auto my-4 text-lg
         ">
-        Read
+        Read &#8250;
       </Link>
     </div>
   );
