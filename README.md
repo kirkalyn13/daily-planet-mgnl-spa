@@ -82,7 +82,9 @@ git clone https://github.com/kirkalyn13/daily-planet-mgnl-spa.git
 npm install
 ```
 
-3. Run Magnolia CMS CE Edition
+3. Run Magnolia CMS Community Edition
+
+> ❗ Magnolia CMS CE Boilerplate is not included in this repo.
 
 ```bash
 npm run dev
