@@ -14,5 +14,4 @@ form:
       $type: jcrMultiLinkField
       label: Articles
       minItems: 1
-      maxItems: 3
       field: !include:/daily-planet-lm/includes/apps/shared/articles/article-link.yaml
