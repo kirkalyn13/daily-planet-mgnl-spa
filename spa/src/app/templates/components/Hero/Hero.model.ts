@@ -4,9 +4,9 @@ import { MagnoliaNodeMeta } from '@magnolia/frontend-helpers-base';
 import { MgnlContent } from '@magnolia/frontend-helpers-base/types';
 
 export default interface IHeroProps {
-  metadata: MagnoliaNodeMeta;
-  backgroundImage?: MgnlContent;
-  title: string;
+  metadata?: MagnoliaNodeMeta;
+  heroImage: MgnlContent;
+  heroTitle: string;
   subtitle: string;
   description: string;
 }
