@@ -1,1 +1,38 @@
-!include:/daily-planet-lm/includes/apps/dialogs/page-properties.yaml
+label: Article Properties
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+      i18n: true
+    author:
+      label: Author
+      $type: textField
+      i18n: true
+    publishDate:
+      $type: dateField
+      label: Publish Date
+      type: java.util.Date
+      dateFormat: MMM d, yyyy
+    readTime:
+      label: Read Time (min)
+      $type: textField
+      type: java.lang.Integer
+      converterClass: com.vaadin.data.converter.StringToIntegerConverter
+      i18n: true
+    heroImage:
+      label: Image
+      $type: damLinkField
+      i18n: true
+    heroTitle:
+      label: Title
+      $type: textField
+      i18n: true
+    subtitle:
+      label: Subtitle
+      $type: textField
+      i18n: true
+    description:
+      label: Text
+      $type: richTextField
+      i18n: true

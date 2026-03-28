@@ -2,17 +2,17 @@ import Image from '../../fragments/Image';
 import IHeroProps from "./Hero.model";
 
 const Hero = ({
-  backgroundImage,
-  title,
+  heroImage,
+  heroTitle,
   subtitle,
   description,
 }: IHeroProps) => {
   return (
     <section className="relative w-full min-h-[60vh] flex items-center justify-center text-center px-6 overflow-hidden">
-      {backgroundImage && 
+      {heroImage && 
       <Image 
-        image={backgroundImage} 
-        alt={title || 'Hero Image'} 
+        image={heroImage} 
+        alt={heroTitle || 'Hero Image'} 
         caption=""
         styles="
             object-cover object-center 
@@ -28,7 +28,7 @@ const Hero = ({
           </p>
         )}
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-          {title}
+          {heroTitle}
         </h1>
         {description && (
           <p className="text-lg md:text-xl text-gray-200">
