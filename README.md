@@ -1,6 +1,7 @@
 # Daily Planet Next.js SPA (Magnolia CMS Integration)  
 
 A simple **Magnolia CMS + Next.js SPA** exploratory project inspired by the *Daily Planet* theme. This project explores the integration of **Magnolia CMS** with **Next.js**, showcasing how CMS content can be rendered in a modern React-based frontend.  
+![Project Preview](./assets/project-overview.png)
 
 ---
 
@@ -10,6 +11,7 @@ A simple **Magnolia CMS + Next.js SPA** exploratory project inspired by the *Dai
 - **Next.js** – React-based framework for SPA and SSR
 - **Tailwind CSS** – Styling
 - **React** – Component-based UI
+- **YAML** - For light module development
 
 ---
 
@@ -18,40 +20,51 @@ A simple **Magnolia CMS + Next.js SPA** exploratory project inspired by the *Dai
 ### Pages
 
 - **Home**  
-  The main landing page of the site
-
+  🏠 The main landing page of the site
+  ![Home Page Example](./assets/home.png)
 - **General**  
-  Other pages under home
-
+  📄 Other pages under home
+  ![General Page Example](./assets/general.png)
 - **Article List**  
-  A listing of article pages
-
+  📰 A listing of article pages
+  ![Article List Page Example](./assets/article-list.png)
 - **Article**  
-  Individual article pages
-
+  ✏️ Individual article pages
+  ![Article Page Example](./assets/article.png)
 ---
 
 ### Components
 
 - **Rich Text**  
-  Display formatted text content from Magnolia CMS  
-  ![Rich Text Example](path-to-your-image.png)
+  📝 Display formatted text content from Magnolia CMS  
+  ![Rich Text Example](./assets/rich-text.png)
 
 - **Text With Image**  
-  Text content with an accompanying image  
-  ![Text With Image Example](path-to-your-image.png)
+  🖼️ Text content with an accompanying image  
+  ![Text With Image Example](./assets/text-with-image.png)
 
 - **Hero**  
-  Large featured image with title/description for highlights  
-  ![Hero Example](path-to-your-image.png)
+  🌟 Large featured image with title/description for highlights  
+  ![Hero Example](./assets/hero.png)
 
 - **Carousel**  
-  Slideshow of articles or featured images  
-  ![Carousel Example](path-to-your-image.png)
+  🎞️ Slideshow of articles or featured images  
+  ![Carousel Example](./assets/carousel.png)
 
 - **Link List with Cards**  
-  A grid of cards linking to different pages/articles  
-  ![Link List with Cards Example](path-to-your-image.png)
+  📇 A grid of cards linking to different pages/articles  
+  ![Link List with Cards Example](./assets/link-list.png)
+
+- **Feature Article**  
+  📰✨ Highlights a single featured article with hero image, title, and summary  
+  ![Feature Article Example](./assets/featured-article.png)
+
+---
+
+### Other Components
+
+- Navbar
+- Footer
 
 ---
 
@@ -96,3 +109,7 @@ Fully responsive Next.js frontend using Tailwind CSS.
 Modular component structure for easy experimentation and reuse.
 SPA-like behavior with fast navigation between pages.
 Exploratory implementation of rich content components like Hero, Carousel, and Card grids.
+
+## Author
+
+- [Engr. Kirk Alyn Santos](https://github.com/kirkalyn13)
