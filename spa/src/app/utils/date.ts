@@ -1,0 +1,1 @@
+export const getPublishDate = (datetime: string): string => datetime.split("T")[0]

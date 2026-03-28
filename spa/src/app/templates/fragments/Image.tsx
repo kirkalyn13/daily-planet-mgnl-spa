@@ -2,28 +2,39 @@
 import NextImage from 'next/image';
 import { environment } from '@/environments/environment';
 import { MgnlContent } from '@magnolia/frontend-helpers-base';
+import { fetchFromPublic, getPublicLinkFromID } from '@/app/utils/image';
 
-const MGNL_AUTHOR = "magnoliaAuthor"
-
-const fetchFromPublic = (url: string): string => url.includes(MGNL_AUTHOR) ? url.replace(MGNL_AUTHOR, "magnoliaPublic") : url;
+interface IImageProps {
+  image?: MgnlContent;
+  alt?: string;
+  caption?: string;
+  styles?: string;
+  id?: string
+}
 
 const Image = ({
   image,
   alt,
   caption,
-  styles
-}: {
-  image?: MgnlContent;
-  alt: string;
-  caption: string;
-  styles?: string
-}) => {
+  styles,
+  id
+}: IImageProps) => {
+  let damURL;
+
   if (image) {
-    const imageLink = image['@link'] as string;
-    const damURL = imageLink?.startsWith('https')
+    const imageLink = id ? getPublicLinkFromID(id) : image['@link'] as string;
+    damURL = imageLink?.startsWith('http')
       ? `${imageLink}`
       : `${environment.damRawBase}${imageLink}`;
 
+    console.log(damURL)
+
+    
+  }
+
+  if (id) damURL = getPublicLinkFromID(id)
+
+  if (damURL) {
     return (
       <div>
         <NextImage src={fetchFromPublic(damURL)} alt={alt} className={styles} fill={true}/>
@@ -31,6 +42,7 @@ const Image = ({
       </div>
     );
   }
+  
   return null;
 };
 

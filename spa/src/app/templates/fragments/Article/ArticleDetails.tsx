@@ -1,13 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { getPublishDate } from "@/app/utils/date";
 
 interface IArticleDetailsProps {
     author: string,
     publishDate: string,
     readTime: number
 }
-
-const getPublishDate = (datetime: string): string => datetime.split("T")[0]
 
 const ArticleDetails = ({ author, publishDate, readTime = 0 }: IArticleDetailsProps) => {
   return (

@@ -1,0 +1,12 @@
+label: Featured Article
+form:
+  properties:
+    article:
+      $type: linkField
+      label: Article
+      datasource:
+        $type: jcrDatasource
+        workspace: website
+        rootPath: /daily-planet/articles
+        allowedNodeTypes:
+          - mgnl:page
