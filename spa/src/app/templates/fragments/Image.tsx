@@ -15,7 +15,7 @@ interface IImageProps {
 const Image = ({
   image,
   alt,
-  caption,
+  caption = "",
   styles,
   id
 }: IImageProps) => {
@@ -28,7 +28,7 @@ const Image = ({
       : `${environment.damRawBase}${imageLink}`;
   }
 
-  if (id) damURL = getPublicLinkFromID(id)
+  if (id) damURL = getPublicLinkFromID(id);
 
   if (damURL) {
     return (

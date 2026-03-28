@@ -1,0 +1,8 @@
+$type: linkField
+label: Article
+datasource:
+  $type: jcrDatasource
+  workspace: website
+  rootPath: /daily-planet/articles
+  allowedNodeTypes:
+    - mgnl:page

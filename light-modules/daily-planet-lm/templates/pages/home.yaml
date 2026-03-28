@@ -10,8 +10,8 @@ areas:
   main:
     title: Main Area
     availableComponents:
-      Hero:
-        id: daily-planet-lm:components/hero
+      Carousel:
+        id: daily-planet-lm:components/carousel
       FeaturedArticle:
         id: daily-planet-lm:components/featured-article
 

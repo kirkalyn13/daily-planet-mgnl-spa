@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { getPublishDate } from "@/app/utils/date";
 

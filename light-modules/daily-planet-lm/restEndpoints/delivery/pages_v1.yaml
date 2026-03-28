@@ -29,3 +29,8 @@ references:
     referenceResolver:
       $type: jcrReferenceResolver
       targetWorkspace: website
+  - name: articleReference
+    propertyName: articles
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: website
