@@ -23,7 +23,7 @@ const FeaturedArticle = ({
           styles="object-contain object-center w-full h-full"
         />
       </div>
-      <h3 className="font-bold text-lg mb-2">{articleTitle}</h3>
+      <h3 className="font-bold text-2xl mb-4">{articleTitle}</h3>
       <span className="italic">{publishDate}</span>
       <div dangerouslySetInnerHTML={{ __html: decodeIfEscaped(previewText)}} className="max-w-3xl mx-auto my-4 text-justify"/>
       <Link
