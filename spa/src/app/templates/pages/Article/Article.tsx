@@ -24,7 +24,7 @@ const Article = ({
         </header>
       )}
       <Hero heroImage={heroImage} heroTitle={heroTitle} subtitle={subtitle} description={description} />
-      <main className="w-full max-w-5xl mx-auto px-6 md:px-8 my-4">
+      <main className="w-full max-w-5xl mx-auto px-6 md:px-8 my-8">
         <ArticleDetails author={author} publishDate={publishDate} readTime={readTime}/>
         {main && <EditableArea content={main} />}
       </main>

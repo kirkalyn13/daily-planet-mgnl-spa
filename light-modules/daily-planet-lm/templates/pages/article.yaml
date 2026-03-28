@@ -12,9 +12,9 @@ areas:
     availableComponents:
       Hero:
         id: daily-planet-lm:components/hero
-      Text:
+      RichText:
         id: daily-planet-lm:components/rich-text
-      TextImage:
+      TextWithImage:
         id: daily-planet-lm:components/text-with-image
       LinkList:
         id: daily-planet-lm:components/link-list

@@ -11,7 +11,7 @@ interface IArticleDetailsProps {
 const ArticleDetails = ({ author, publishDate, readTime = 0 }: IArticleDetailsProps) => {
   return (
     <div>
-        <h2 className='pb-4 font-bold text-l flex'>
+        <h2 className='font-bold text-l flex md:mx-8'>
             {`Article | By: ${author} | ${getPublishDate(publishDate)} `}
             <FontAwesomeIcon icon={faClock} className="w-5 h-5 text-black ms-2 me-1"/>
             {`${readTime} min`}

@@ -6,7 +6,7 @@ import { fetchFromPublic, getPublicLinkFromID } from '@/app/utils/image';
 
 interface IImageProps {
   image?: MgnlContent;
-  alt?: string;
+  alt: string;
   caption?: string;
   styles?: string;
   id?: string
@@ -26,10 +26,6 @@ const Image = ({
     damURL = imageLink?.startsWith('http')
       ? `${imageLink}`
       : `${environment.damRawBase}${imageLink}`;
-
-    console.log(damURL)
-
-    
   }
 
   if (id) damURL = getPublicLinkFromID(id)

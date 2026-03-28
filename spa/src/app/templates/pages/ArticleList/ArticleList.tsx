@@ -11,7 +11,7 @@ const ArticleList = ({ title, main, footer }: IArticleListProps) => {
         </header>
       )}
 
-      <main>{main && <EditableArea content={main} />}</main>
+      <main className="w-full max-w-5xl mx-auto px-6 md:px-8 my-8">{main && <EditableArea content={main} />}</main>
 
       {footer && (
         <EditableArea
