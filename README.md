@@ -59,6 +59,10 @@ A simple **Magnolia CMS + Next.js SPA** exploratory project inspired by the *Dai
   📰✨ Highlights a single featured article with hero image, title, and summary  
   ![Feature Article Example](./assets/featured-article.png)
 
+- **IFrame**  
+  📰✨ Displays an embedded web page or external content within the application.
+  ![Feature Article Example](./assets/iframe.png)
+
 ---
 
 ### Other Components

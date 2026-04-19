@@ -12,6 +12,7 @@ import RichText from './app/templates/components/Text/RichText';
 import TextWithImage from './app/templates/components/TextWithImage/TextWithImage';
 import FeaturedArticle from './app/templates/components/FeaturedArticle/FeaturedArticle';
 import Carousel from './app/templates/components/Carousel/Carousel';
+import IFrame from './app/templates/components/IFrame/IFrame';
 
 export const config: MagnoliaConfig = {
   componentMappings: {
@@ -28,6 +29,7 @@ export const config: MagnoliaConfig = {
     'daily-planet-lm:components/text-with-image': TextWithImage,
     'daily-planet-lm:components/link-list': LinkList,
     'daily-planet-lm:components/carousel': Carousel,
-    'daily-planet-lm:components/featured-article': FeaturedArticle
+    'daily-planet-lm:components/featured-article': FeaturedArticle,
+    'daily-planet-lm:components/iframe': IFrame
   },
 };

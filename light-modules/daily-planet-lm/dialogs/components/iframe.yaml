@@ -1,0 +1,8 @@
+label: IFrame
+form:
+  properties:
+    code:
+      $type: codeField
+      label: Code
+      required: true
+      description: Code for the embedded Iframe component

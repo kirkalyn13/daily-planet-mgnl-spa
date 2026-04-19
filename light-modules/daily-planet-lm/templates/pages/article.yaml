@@ -16,7 +16,8 @@ areas:
         id: daily-planet-lm:components/rich-text
       TextWithImage:
         id: daily-planet-lm:components/text-with-image
-
+      IFrame:
+        id: daily-planet-lm:components/iframe
   footer:
     title: Footer Area
     inheritance:
