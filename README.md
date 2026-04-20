@@ -1,7 +1,8 @@
 # Daily Planet Next.js SPA (Magnolia CMS Integration)  
 
 A simple **Magnolia CMS + Next.js SPA** exploratory project inspired by the *Daily Planet* theme. This project explores the integration of **Magnolia CMS** with **Next.js**, showcasing how CMS content can be rendered in a modern React-based frontend.  
-![Project Preview](./assets/project-overview.png)
+
+![Project Preview](./assets/project-overview.gif)
 
 ---
 
